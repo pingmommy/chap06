@@ -1,51 +1,42 @@
 
 public class Exercise06 {
 
-	//6-1
+	//6-1,2
 	
-//	static class SutdaCard{
-//		int num=1;
-//		boolean isKwang=true;
-//		
-//		public SutdaCard() {
-//			
-//		}
-//		
-//		public SutdaCard(int n, boolean a) {
-//			num =n;
-//			isKwang = a;
-//		}
-//		
-//		int number(num) {
-//			
-//		}
-//		
-//		
-//		boolean info() {
-//			System.out.print(num);
-//			
-//			if(isKwang equals('광')) {
-//				return'K';
-//			}
-//		    return isKwang;
-//			
-//		}
-//	}
-//	
-//	
-//	
-//	
-//	
-//	public static void main(String[] args) {
-//		SutdaCard card1 = new SutdaCard(3,false);
-//		SutdaCard card2 = new SutdaCard();
-//		
-//		System.out.println(card1.info());
-//		System.out.println(card2.info());
-//	}
+	static class SutdaCard{
+		int num;
+		boolean isKwang;
+		
+		public SutdaCard() {
+			
+			
+		}
+		
+		public SutdaCard(int n, boolean a) {
+			num =n;
+			isKwang = a;
+		}
+		
+		boolean info1() {
+			return true;
+		}
+
+	}
 	
 	
-	//6-3
+	
+	
+	
+	public static void main(String[] args) {
+		SutdaCard card1 = new SutdaCard(3,false);
+		SutdaCard card2 = new SutdaCard();
+		
+		System.out.println(card1.info1());
+		System.out.println(card2.info1());
+	}
+	
+	
+	//6-3,4
 	
 	static class Student{
 		String name;
@@ -65,13 +56,15 @@ public class Exercise06 {
 			return kor+eng+math ;
 		}
 		
-		float getAverage() {
+		public float getAverage() {
 			
-			return getTotal()/3.0f; // 소수점 둘째자리까지 반올림. 
+			return Math.round(getTotal()/3f*10)/10.0f; 
+			
+			
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main2(String[] args) {
 		
 		Student s = new Student();
 		s.name ="홍길동";
