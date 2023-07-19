@@ -18,8 +18,22 @@ public class Exercise6_5 {
 			score3=s3;
 		}
 		
+		int getTotal() {
+			
+			
+			return score1+score2+score3 ;
+		}
+		
+		float getAverage() {
+			
+			return Math.round(getTotal()/3f*10)/10.0f; 
+			
+			
+		}
+		
+		
 		String info() {
-			return name + ban;
+			return name + ban+no+score1+score2+score3+getTotal()+getAverage();
 			
 		}
 		

@@ -24,4 +24,4 @@ public class Exercise6_8 {
 
 // 클래스변수(static변수) - int kind, int num,
 // 인스턴스변수 - card
-// 지역변수 -
+// 지역변수 
