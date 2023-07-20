@@ -2,7 +2,6 @@ package util;
 
 import util.VT100;
 
-
 public class Alpha {
 	int line;
 	int coulmn;
@@ -13,10 +12,7 @@ public class Alpha {
 	public Alpha() {
 		line = (int)(Math.random()*20+1);
 		coulmn = (int)(Math.random()*40+1);
-	//	fg = Color.values()[(int)(Math.random()*8)];
-		//bg = Color.values()[(int)(Math.random()*8)];
-		
-		
+
 		do {
 			fg = Color.values()[(int)(Math.random()*8)];
 			bg = Color.values()[(int)(Math.random()*8)];
@@ -25,12 +21,17 @@ public class Alpha {
 		
 		ch=(char)(Math.random()*26+'A');
 	}
+	
 		public void show() {
 			VT100.cursorMove(line,coulmn);
 			VT100.setForeground(fg);
 			VT100.setBackground(bg);
 			VT100.print(ch);
 		}
+	
+		
+		
+		
 	
 	}
 	

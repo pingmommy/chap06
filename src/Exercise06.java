@@ -13,8 +13,9 @@ public class Exercise06 {
 			this(1,true);
 		}
 		
-		boolean info() {
-			return isKwang;
+		String info() {
+			String a = (isKwang ==true? "k" :" ");
+	        return num+a; 	
 		}
 		
 	}
@@ -24,7 +25,7 @@ public class Exercise06 {
 		SutdaCard card2 = new SutdaCard();
 		
 		System.out.println(card1.info());
-	//	System.out.println(card2.info1());
+		System.out.println(card2.info());
 	}
 	
 	

@@ -23,7 +23,7 @@ package com.example;
 import util.Alpha;
 import util.VT100;
 
-public class RectangleExample2 {
+public class RectangleBymyself {
 
 	public static void main(String[] args) throws InterruptedException {
 	

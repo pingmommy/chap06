@@ -3,11 +3,11 @@ package com.example;
 import util.Alpha;
 import util.VT100;
 
-public class RectangleExample {
+public class RectangleRevisionNotyetcomplete {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		
+		boolean arr[][]=new boolean[20][40];
 		
 		VT100.clearScreen();
 		
@@ -15,7 +15,7 @@ public class RectangleExample {
 			Alpha a = new Alpha();
 			 a.show();
 			
-			
+
 			 
 			 VT100.reset();
 			 VT100.cursorMove(1, 42);
