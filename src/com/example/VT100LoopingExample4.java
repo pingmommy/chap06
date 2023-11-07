@@ -13,6 +13,7 @@ public class VT100LoopingExample4 {
 		
 		
 		for(;;) {
+			
 			int line = (int)(Math.random()*20 + 1);     //화면상의 좌표
 			int column = (int)(Math.random()*40 + 1);    //화면상의 좌표
 			int fg = 0;
@@ -25,6 +26,7 @@ public class VT100LoopingExample4 {
 			
 			int ch = (int)(Math.random()*26 + 'A');
 			
+			foreCount++;
 			System.out.printf("\033[%d;%dH",line,column );  // 좌표 출력
 			System.out.printf("\033[%dm",fg);
 			System.out.printf("\033[%dm",bg);
@@ -38,6 +40,10 @@ public class VT100LoopingExample4 {
 			System.out.printf("\033[1;42H");
 			System.out.printf("\033[0m");
 			System.out.printf("foreCount = %d",foreCount++);
+			
+			System.out.printf("\033[2;42H");
+			System.out.printf("\033[0m");
+			System.out.printf("Count = %d",count);
 			
 			
 			

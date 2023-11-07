@@ -10,7 +10,7 @@ package com.example;
    -대문자 알파벳이 무작위로 주어진다. 
  2. 무한루프를 종료시킨다.
    - 조건 : 
-        알파화면[20][40]이 전부 프린트되면 무한루프가 종료됨.
+        알파화면[20][40]이 전부 프린트되면 무한루프가 종료됨. 800
         전부 프린트된 걸 어떻게 확인하지? 
          
         배열을 사용한다. 
@@ -34,15 +34,13 @@ public class RectangleBymyself {
 		//비어 있는 상태에서 초기값만 있다. 
 		//현재 배열의 값: false 
 		//현재와 다른 상태 : 배열공간이 채워짐. -> true
-		//배열의 요소가 true인 걸 어떻게 확인하지..?
+		//배열의 요소가 true인 걸 어떻게 확인하지..? -> 초기값(false)를 true로 바꿈. 
 		
 		boolean arr[][]=new boolean[20][40]; //[line][column]
 		
 		int foreCount = 0; // 무한루프의 반복횟수
 		int count= 0; //화면에 채워지는 알파벳 갯수 
 		
-		// forecount와 count가 다른가..? 왜..?
-		//
 		
 		for(;;) {
 			foreCount++;
@@ -69,7 +67,7 @@ public class RectangleBymyself {
 			
 			
 			}
-			
+			VT100.reset();
 		}
 		
 	}

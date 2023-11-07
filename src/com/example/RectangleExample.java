@@ -11,17 +11,17 @@ public class RectangleExample {
 		
 		VT100.clearScreen();
 		
-		for(int i=0; i<=1000;i++) {
+		for(int i=0; i<=100;i++) {
 			Alpha a = new Alpha();
 			 a.show();
 			
 			
 			 
+			 Thread.sleep(10);
 			 VT100.reset();
 			 VT100.cursorMove(1, 42);
 			 System.out.printf("count = [%05d]",i);
 			 
-			 Thread.sleep(10);
 		}
 	
 		

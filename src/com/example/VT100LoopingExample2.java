@@ -42,8 +42,6 @@ public class VT100LoopingExample2 {
 				if(isAllPrint ==false) {
 					break;
 			}
-			if(isAllPrint) 
-				break;
 			
 			Thread.sleep(1);
 			
@@ -51,14 +49,19 @@ public class VT100LoopingExample2 {
 
 		}
 		
+			if(isAllPrint) 
+				break;
 		
 
 		
 		
+	}
 		System.out.print("\033[0m");
 		System.out.print("\033[21;1H");
 		System.out.println("Program End");
+		
+		
 	}
-	}}
+}
 
 

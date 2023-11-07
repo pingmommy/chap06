@@ -17,7 +17,6 @@ public class AlphaExample {
 		VT100.cursorMove(13, 5);
 		VT100.setForeground(Color.Cyan);
 		VT100.setBackground(Color.Green);
-
 		System.out.println("world");
 
 		VT100.cursorMove(5, 20);
@@ -39,7 +38,6 @@ public class AlphaExample {
 		VT100.cursorMove(13, 5);
 		VT100.setForeground(32);
 		VT100.setBackground(46);
-
 		System.out.println("world");
 
 		VT100.cursorMove(5, 20);
